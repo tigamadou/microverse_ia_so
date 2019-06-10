@@ -1,95 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <style type="text/css">
-      .container{
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style type="text/css">
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      margin: 50px auto 0px auto;
+      max-width: 900px;
+
+    }
+
+    @media(max-width: 620px) {
+      #nav-bar ul {
+        display: block;
+
+      }
+
+      #nav-bar {
+        height: 30vh;
+      }
+
+      li {
         display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        margin: 50px auto 0px auto;
-        max-width: 900px;
-
+        justify-content: center;
       }
-      @media(max-width: 620px){
-        #nav-bar ul{
-          display: block;
-          
-        }
 
+      .container {
+        margin-top: 30vh;
       }
-    </style>
-  </head>
 
-  <body>
-    
-    <div class="container">
-      
-      <header id="header" class="header">
-        <img id="header-img" src="http://placehold.it/64x64" />
-        <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+    }
+  </style>
+</head>
 
-      <div>
-        <iframe width="560" height="450" src="https://www.youtube.com/embed/giYeaKsXnsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
-      </div>
-      <div id="about" class="has-text-centered hero">
-        <h3>About</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div id="services" class="has-text-centered hero">
-        <h3>Srvices</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div id="contact" class="has-text-centered hero">
-        
-        <h3>Contacts</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div  class="has-text-centered hero">
-        <h3>Subscribe to our NewsLetter</h3>
-        <br>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-          <input
-            id="email"
-            name="email"
-            placeholder="Type your email here"
-            type="email"
-          />
-          <input type="submit" id="submit" />
-        </form>
-      </div>
+<body>
+
+  <div class="container">
+
+    <header id="header" class="header">
+      <img id="header-img" src="http://placehold.it/64x64" />
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="video_margin">
+      <iframe width="560" height="450" src="https://www.youtube.com/embed/giYeaKsXnsI" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        id="video"></iframe>
     </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+    <div id="about" class="has-text-centered hero">
+      <h3>About</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div id="services" class="has-text-centered hero">
+      <h3>Srvices</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div id="contact" class="has-text-centered hero">
+
+      <h3>Contacts</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="has-text-centered hero">
+      <h3>Subscribe to our NewsLetter</h3>
+      <br>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input id="email" name="email" placeholder="Type your email here" type="email" />
+        <input type="submit" id="submit" />
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
